@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredPath, setHoveredPath] = useState<string | null>(null);
   const { scrollY, scrollYProgress } = useScroll();
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
 
   // Dynamic values based on scroll
   const navPadding = useTransform(scrollY, [0, 100], ['1.25rem', '0.6rem']);
@@ -21,7 +21,7 @@ const Navbar = () => {
       if (window.innerWidth >= 768) setIsMenuOpen(false);
     };
     
-    // Set initial width
+    // Initial call
     handleResize();
 
     window.addEventListener('scroll', handleScroll);
