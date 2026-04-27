@@ -57,24 +57,24 @@ const Solution = () => {
         <div className="max-w-6xl mx-auto">
           
           {/* CABECERA MONUMENTAL CON ANIMACIÓN DE ENTRADA */}
-          <div className="text-center mb-32 md:mb-48">
+          <div className="text-center mb-20 md:mb-48">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-accent/30 bg-accent/5 mb-10"
+              className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-accent/30 bg-accent/5 mb-8 md:mb-10"
             >
               <motion.span 
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="w-2 h-2 bg-accent rounded-full" 
               />
-              <span className="text-accent text-xs font-black tracking-[0.5em] uppercase text-white">Nuestra Respuesta</span>
+              <span className="text-accent text-[10px] md:text-xs font-black tracking-[0.5em] uppercase">Nuestra Respuesta</span>
             </motion.div>
 
             <motion.h2 
               style={{ y: titleY }}
-              className="text-5xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] tracking-tighter uppercase italic mb-12"
+              className="text-4xl md:text-8xl lg:text-9xl font-black text-white leading-tight md:leading-[0.85] tracking-tighter uppercase italic mb-8 md:mb-12"
             >
               Hacemos que tu <br />
               <motion.span 
@@ -92,7 +92,7 @@ const Solution = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="text-xl md:text-3xl text-gray-400 font-medium max-w-4xl mx-auto leading-tight"
+              className="text-lg md:text-3xl text-gray-400 font-medium max-w-4xl mx-auto leading-snug px-4"
             >
               Diseñamos puentes emocionales entre productos y humanos. <br className="hidden md:block" />
               Convertimos la curiosidad en <span className="text-white border-b-2 border-accent">conexión real.</span>
@@ -100,7 +100,7 @@ const Solution = () => {
           </div>
 
           {/* GRID DE CARACTERÍSTICAS CON STAGGER ANIMATION */}
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-12">
             {features.map((item, idx) => (
               <motion.div 
                 key={idx}
@@ -109,22 +109,22 @@ const Solution = () => {
                 transition={{ delay: idx * 0.15, duration: 0.7, ease: "easeOut" }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10 }}
-                className="group relative p-10 bg-white/[0.02] border border-white/5 rounded-[3rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:bg-white/[0.04] hover:border-accent/30"
+                className="group relative p-8 md:p-10 bg-white/[0.02] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:bg-white/[0.04] hover:border-accent/30"
               >
                 {/* Icono con rotación y resplandor */}
                 <motion.div 
                   whileHover={{ rotate: 12, scale: 1.1 }}
-                  className="mb-10 w-20 h-20 bg-dark border border-white/10 rounded-2xl flex items-center justify-center text-accent shadow-2xl relative"
+                  className="mb-8 md:mb-10 w-16 h-16 md:w-20 md:h-20 bg-dark border border-white/10 rounded-2xl flex items-center justify-center text-accent shadow-2xl relative"
                 >
                   <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
                   {item.icon}
                 </motion.div>
 
-                <h3 className="text-3xl font-black text-white mb-6 leading-none group-hover:text-accent transition-colors tracking-tight uppercase italic">
+                <h3 className="text-2xl md:text-3xl font-black text-white mb-4 md:mb-6 leading-tight group-hover:text-accent transition-colors tracking-tight uppercase italic">
                   {item.title}
                 </h3>
 
-                <p className="text-lg text-gray-500 group-hover:text-gray-300 transition-colors font-medium leading-relaxed">
+                <p className="text-base md:text-lg text-gray-500 group-hover:text-gray-300 transition-colors font-medium leading-relaxed">
                   {item.desc}
                 </p>
 
