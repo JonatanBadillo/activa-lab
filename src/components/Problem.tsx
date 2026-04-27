@@ -128,18 +128,18 @@ const Problem = () => {
         >
           <div className="absolute -inset-2 bg-gradient-to-r from-accent to-white rounded-[4rem] blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-1000" />
           
-          <div className="relative bg-black rounded-[4rem] border border-white/10 overflow-hidden p-12 md:p-32 text-center">
+          <div className="relative bg-black rounded-[2.5rem] md:rounded-[4rem] border border-white/10 overflow-hidden p-8 md:p-32 text-center">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,85,0,0.1),transparent_70%)]" />
             
             <div className="relative z-10 flex flex-col items-center">
-              <span className="text-accent text-xs font-black tracking-[0.5em] uppercase mb-10 border-b border-accent/30 pb-2">La Solución</span>
+              <span className="text-accent text-[10px] md:text-xs font-black tracking-[0.5em] uppercase mb-8 md:10 border-b border-accent/30 pb-2">La Solución</span>
 
-              <h4 className="text-6xl md:text-[10rem] font-black text-white leading-[0.8] tracking-tighter mb-16 uppercase italic">
+              <h4 className="text-4xl md:text-[10rem] font-black text-white leading-tight md:leading-[0.8] tracking-tighter mb-12 md:mb-16 uppercase italic">
                 ¿CANSADO DE <br /> 
                 <span className="text-accent drop-shadow-[0_0_30px_rgba(255,85,0,0.6)]">DESAPARECER?</span>
               </h4>
 
-              <p className="max-w-3xl text-xl md:text-3xl text-gray-400 font-bold mb-20 leading-tight">
+              <p className="max-w-3xl text-lg md:text-3xl text-gray-400 font-bold mb-12 md:mb-20 leading-tight">
                 Deja de ser ruido. Empecemos a crear experiencias que <span className="text-white">tu audiencia realmente quiera vivir.</span>
               </p>
 
@@ -147,7 +147,7 @@ const Problem = () => {
                 href="#contacto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group/btn relative px-12 md:px-24 py-8 md:py-12 bg-white text-black font-black text-2xl md:text-4xl rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl transition-all"
+                className="group/btn relative px-8 md:px-24 py-6 md:py-12 bg-white text-black font-black text-xl md:text-4xl rounded-2xl md:rounded-[3rem] overflow-hidden shadow-2xl transition-all"
               >
                 <div className="absolute inset-0 bg-accent translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500" />
                 <span className="relative z-10 flex items-center gap-6 md:gap-10 group-hover/btn:text-white transition-colors">

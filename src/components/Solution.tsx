@@ -74,7 +74,7 @@ const Solution = () => {
 
             <motion.h2 
               style={{ y: titleY }}
-              className="text-4xl md:text-8xl lg:text-9xl font-black text-white leading-tight md:leading-[0.85] tracking-tighter uppercase italic mb-8 md:mb-12"
+              className="text-3xl md:text-7xl lg:text-9xl font-black text-white leading-tight md:leading-[0.85] tracking-tighter uppercase italic mb-8 md:mb-12"
             >
               Hacemos que tu <br />
               <motion.span 
@@ -92,7 +92,7 @@ const Solution = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="text-lg md:text-3xl text-gray-400 font-medium max-w-4xl mx-auto leading-snug px-4"
+              className="text-base md:text-2xl text-gray-400 font-medium max-w-4xl mx-auto leading-snug px-4"
             >
               Diseñamos puentes emocionales entre productos y humanos. <br className="hidden md:block" />
               Convertimos la curiosidad en <span className="text-white border-b-2 border-accent">conexión real.</span>
@@ -109,22 +109,22 @@ const Solution = () => {
                 transition={{ delay: idx * 0.15, duration: 0.7, ease: "easeOut" }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10 }}
-                className="group relative p-8 md:p-10 bg-white/[0.02] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:bg-white/[0.04] hover:border-accent/30"
+                className="group relative p-6 md:p-10 bg-white/[0.02] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:bg-white/[0.04] hover:border-accent/30"
               >
                 {/* Icono con rotación y resplandor */}
                 <motion.div 
                   whileHover={{ rotate: 12, scale: 1.1 }}
-                  className="mb-8 md:mb-10 w-16 h-16 md:w-20 md:h-20 bg-dark border border-white/10 rounded-2xl flex items-center justify-center text-accent shadow-2xl relative"
+                  className="mb-6 md:mb-10 w-14 h-14 md:w-20 md:h-20 bg-dark border border-white/10 rounded-2xl flex items-center justify-center text-accent shadow-2xl relative"
                 >
                   <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
                   {item.icon}
                 </motion.div>
 
-                <h3 className="text-2xl md:text-3xl font-black text-white mb-4 md:mb-6 leading-tight group-hover:text-accent transition-colors tracking-tight uppercase italic">
+                <h3 className="text-xl md:text-2xl font-black text-white mb-3 md:mb-6 leading-tight group-hover:text-accent transition-colors tracking-tight uppercase italic">
                   {item.title}
                 </h3>
 
-                <p className="text-base md:text-lg text-gray-500 group-hover:text-gray-300 transition-colors font-medium leading-relaxed">
+                <p className="text-sm md:text-base text-gray-500 group-hover:text-gray-300 transition-colors font-medium leading-relaxed">
                   {item.desc}
                 </p>
 
