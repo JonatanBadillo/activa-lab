@@ -79,7 +79,7 @@ const Navbar = () => {
                 </div>
               </div>
               <span className="text-xl font-black tracking-tighter text-white uppercase italic">
-                Activa<span className="text-accent">Lab.</span>
+                Activamente<span className="text-accent">Lab.</span>
               </span>
             </motion.a>
 

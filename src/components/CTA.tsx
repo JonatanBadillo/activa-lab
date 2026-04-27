@@ -75,7 +75,7 @@ const CTA = () => {
 
                 {/* BOTÓN REFINADO Y LLAMATIVO */}
                 <motion.a
-                  href="mailto:hola@activamente.lab"
+                  href="mailto:hola@activamentelab.com"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="group/btn relative px-12 py-5 bg-white text-black font-black text-xl rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.2)] flex items-center gap-4 transition-all"

@@ -42,10 +42,10 @@ const Hero = () => {
         <div className="absolute top-1/2 left-0 w-full overflow-hidden opacity-[0.03] select-none -translate-y-1/2">
           <motion.div variants={marqueeVariants} animate="animate" className="flex whitespace-nowrap">
             <span className="text-[25vw] font-black uppercase italic tracking-tighter pr-20 text-white">
-              ACTIVAR • IMPACTAR • SORPRENDER • 
+              ACTIVAMENTE • IMPACTAR • SORPRENDER • 
             </span>
             <span className="text-[25vw] font-black uppercase italic tracking-tighter pr-20 text-white">
-              ACTIVAR • IMPACTAR • SORPRENDER • 
+              ACTIVAMENTE • IMPACTAR • SORPRENDER • 
             </span>
           </motion.div>
         </div>
