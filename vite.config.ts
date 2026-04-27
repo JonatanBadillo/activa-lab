@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/activa-lab/',
+  base: './', // Cambiado a relativo para máxima compatibilidad
   plugins: [react(), tailwindcss()],
   build: {
     outDir: 'dist',
