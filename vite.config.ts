@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    target: 'es2015', // Más compatible aún
-    cssTarget: 'chrome61' // Versión de Chrome más antigua
+    target: 'es2020',
+    cssTarget: 'chrome80'
   }
 })
