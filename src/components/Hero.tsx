@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowRight, Sparkles, Zap, ChevronRight, Activity, MousePointer2 } from 'lucide-react';
+import { ArrowRight, ChevronRight, Activity, MousePointer2 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const Hero = () => {
